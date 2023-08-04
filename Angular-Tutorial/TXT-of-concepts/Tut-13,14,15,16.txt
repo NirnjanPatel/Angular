@@ -1,0 +1,6 @@
+1. Data Binding - 1 way and 2 way Data Bindings  -  One way means we are only Binding data either from ...............
+2. String Interpolation - we can use value of a variable inside double curly brackets also we can call functions inside double curly brackets.
+3. Property Binding - using property Binding we can bind property of an html attribute or DOM object to a property or method of its component class.
+4. To use property binding use square brackets and assign value in " .. "
+5. Event Binding - Allows us to bind webpage events to a property or method of its component class.
+6. event - target is an input element in which the value is handlling

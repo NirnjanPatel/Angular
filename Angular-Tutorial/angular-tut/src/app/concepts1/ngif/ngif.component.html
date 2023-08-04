@@ -1,0 +1,69 @@
+<!-- dynamically modifying the DOM structure -->
+
+<div class="container border p-3 mt-3">
+  <h1>ngif tutorial!</h1>
+  <button class="btn btn-primary" type="button" (click)="onEditClick()">
+    Make text editable!
+  </button>
+
+  <div *ngIf="canEdit; else noEdit">
+    <p>You can edit the following paragraph.</p>
+  </div>
+  <ng-template #noEdit>
+    <p>The following paragraph is read only. Try clicking the button!</p>
+  </ng-template>
+
+  <p [contentEditable]="canEdit">{{ message }}</p>
+</div>
+
+<div class="container border p-3 mt-3">
+  <h4>Simple form with shorthand syntax: !</h4>
+  <div *ngIf="condition">Content to render when condition is true.</div>
+</div>
+
+<div class="container border p-3 mt-3">
+  <h4>Simple form with expanded syntax:</h4>
+  <ng-template [ngIf]="condition"
+    ><div>Content to render when condition is true.</div></ng-template
+  >
+</div>
+
+<div class="container border p-3 mt-3">
+  <h4>Form with an "else" block:</h4>
+  <div *ngIf="condition1; else elseBlock">
+    Content to render when condition is true.
+  </div>
+  <ng-template #elseBlock
+    >Content to render when condition is false.</ng-template
+  >
+</div>
+
+<div class="container border p-3 mt-3">
+  <h4>Shorthand form with "then" and "else" blocks:</h4>
+  <div *ngIf="condition1; then thenBlock; else elseBlock"></div>
+  <ng-template #thenBlock
+    >Content to render when condition is true.</ng-template
+  >
+  <ng-template #elseBlock
+    >Content to render when condition is false.</ng-template
+  >
+</div>
+
+<div class="container border p-3 mt-3">
+  <h4>Form with storing the value locally:</h4>
+  <div *ngIf="condition2 as value; else elseBlock">value = {{ value }}</div>
+  <ng-template #elseBlock>Content to render when value is null.</ng-template>
+</div>
+
+<div class="container border p-3 mt-3">
+  <h4>Form with storing the value locally:</h4>
+  <button class="btn btn-primary" (click)="show = !show">
+    {{ show ? "hide" : "show" }}
+  </button>
+  <br />
+  show = {{ show }}
+  <br />
+  <div *ngIf="show; else hide">This is the text to show!</div>
+  <ng-template #hide>Click button to hide text</ng-template>
+</div>
+

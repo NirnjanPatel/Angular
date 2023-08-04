@@ -1,0 +1,302 @@
+<app-navbar></app-navbar>
+
+<br />
+
+<!-- <p>{{ title }}</p> -->
+
+<!-- <p>Currently I am using App Component Bootstrap Call</p> -->
+<!-- <app-student-standalone appFontColor color="green" appItalicsFont ></app-student-standalone> -->
+<!-- <app-student-standalone
+  appMouseHover
+  changeColor="blue"
+  (hover)="mouseHoverEvent()"
+></app-student-standalone> -->
+
+<!-- <p>NgIf</p>
+<div *ngIf="title">
+  {{ title }}
+</div>
+
+<div *ngIf="value > 20">value = {{ value }}</div>
+
+<div [hidden]="!visible">Showing value = {{ value1 }}</div> -->
+
+<!-- <p>NgIf else</p>
+<input type="radio" name="radio1" (click)="onChange(true)" />True
+<input type="radio" name="radio1" (click)="onChange(false)" />False -->
+
+<!-- <div *ngIf="IsVisible">True radio button clicked.</div>
+
+<div *ngIf="!IsVisible">False radio button clicked.</div>
+ -->
+
+<!-- <div *ngIf="IsVisible; then thenBlock; else elseBlock">
+  False radio button clicked.
+</div>
+<br />
+<ng-template #thenBlock> True - Then block </ng-template>
+
+<ng-template #elseBlock> True - else block </ng-template> -->
+
+<!-- <p>This is {{ title }}</p> -->
+<!-- <hr /> -->
+
+<!-- <mat-form-field appearance="fill">
+ <mat-select (change)="SetColor($event)">
+    <mat-option value="">Select color</mat-option>
+    <mat-option value="r">Red</mat-option>
+    <mat-option value="g">green</mat-option>
+    <mat-option value="b">blue</mat-option>
+    <mat-option value="defaultoption">Default Option</mat-option>
+  </mat-select>
+</mat-form-field> -->
+
+<!-- <select (change)="SetColor($event)">
+  <option>Select color</option>
+  <option value="r">red</option>
+  <option value="g">green</option>
+  <option value="b">blue</option>
+  <option value="default">Default Option</option>
+</select> -->
+
+<!-- <p>You selected: {{ selected }}</p> -->
+
+<!-- <div [ngSwitch]="color" (change)="SetColor($event)">
+  <div *ngSwitchCase="'r'">
+    <h3 style="color: red">red</h3>
+  </div>
+  <div *ngSwitchCase="'g'">
+    <h3 style="color: rgb(0, 255, 42)">green</h3>
+  </div>
+  <div *ngSwitchCase="'b'">
+    <h3 style="color: rgb(13, 0, 255)">blue</h3>
+  </div>
+  <div *ngSwitchDefault="'defaultoption'">
+    <h3>Default Option</h3>
+  </div>
+</div> -->
+
+<!-- NgFor -->
+<!-- {{ title }} -->
+<!-- 
+<table border="1">
+  <thead>
+    <tr>
+      <th>No.</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>First</th>
+      <th>Last</th>
+      <th>Odd</th>
+      <th>Even</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      *ngFor="
+        let item of StudentDetails;
+        let i = index;
+        let f = first;
+        let l = last;
+        let o = odd;
+        let e = even;
+        trackby: TrackByStdName
+      "
+    >
+      <td>{{ i + 1 }}</td>
+      <td>{{ item.Name }}</td>
+      <td>{{ item.Age }}</td>
+      <td>{{ item.Gender }}</td>
+      <td>{{ f }}</td>
+      <td>{{ l }}</td>
+      <td>{{ o }}</td>
+      <td>{{ e }}</td>
+    </tr>
+  </tbody>
+</table> -->
+
+<!-- trackby -->
+<!-- 
+<table border="1">
+  <thead>
+    <tr>
+      <th>No.</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      *ngFor="
+        let item of StudentDetails;
+        let i = index;
+        trackby: TrackByStdName
+      "
+    >
+      <td>{{ i + 1 }}</td>
+      <td>{{ item.Name }}</td>
+      <td>{{ item.Age }}</td>
+      <td>{{ item.Gender }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<button (click)="GetMoreStData()">Get more data</button> -->
+
+<!-- ngStyle -->
+<!-- <h4>ngStyle inline</h4>
+
+<ul *ngFor="let item of StudentDetails">
+  <li>
+    <div [ngStyle]="{ color: item.Age > 27 ? 'red' : 'green' }">
+      {{ item.Name }} age is  {{ item.Age }}
+    </div>
+  </li>
+</ul>
+
+<h4>ngStyle as a function</h4>
+
+<ul *ngFor="let item of StudentDetails">
+  <li>
+    <div [ngStyle]="{ color: GetAge(item.Age) }">
+      {{ item.Name }} age is  {{ item.Age }}
+    </div>
+  </li>
+</ul> -->
+
+<!-- NgClass -->
+
+<!-- This is {{ title }}
+<p [ngClass]="'color1'">color1</p>
+<p [ngClass]="'color2'">color2</p>
+
+<div *ngFor="let item of StudentDetails" [ngClass]="['color1', 'font1']">
+  {{ item.Name }}
+</div>
+
+<h3 [ngClass]="{ color1: false, color2: true }">Using ngClass with object</h3>
+
+<div [ngClass]="GetCssClass('main1')">Using ngClass as a method calling</div> -->
+
+<!-- Property Binding -->
+
+<!-- This is title = {{ title1 }}
+<div [innerHTML]="title1"></div>
+<span>anyValue = </span>
+<span [innerHTML]="anyValue">anyValue</span> -->
+
+<!-- Attribute Binding -->
+<!-- <table border="1">
+  <thead>
+    <tr>
+      <th [attr.colspan]="colspan">Student Info</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Name</td>
+      <td>{{ Name }}</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>{{ Age }}</td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td>{{ Gender }}</td>
+    </tr>
+  </tbody>
+</table> -->
+
+<!-- Event Binding -->
+<!-- 
+<button (click)="ShowData()">ShowData</button>
+
+<button (dblclick)="ShowAdd()">ShowAdd</button>
+<p>Sum is {{ sum }}</p>
+
+<select (change)="SetColor($event)">
+  <option>Select color</option>
+  <option value="red">red</option>
+  <option value="green">green</option>
+  <option value="blue">blue</option>
+  <option value="default">Default Option</option>
+</select> -->
+
+<!-- Two way data binding -->
+
+<!-- Enter Name :
+<input
+  type="text"
+  [value]="name1"
+  (input)="name1 = $any($event.target).value"
+/>
+<p style="color: red">Updated name1 = {{ name1 }}</p>
+<hr />
+<input [(ngModel)]="name2" />
+<p style="color: red">Updated name2 = {{ name2 }}</p> -->
+
+<!-- Pipes in Angular -->
+<!-- <table border="1">
+  <thead>
+    <tr>
+      <th>No.</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      *ngFor="let item of StudentInfo; let i = index; trackby: TrackByStdName"
+    >
+      <td>{{ i + 1 }}</td>
+      <td>{{ item.Name | uppercase }}</td>
+      <td>{{ item.Age  }}</td>
+      <td>{{ item.Gender }}</td>
+    </tr>
+  </tbody>
+</table> -->
+
+<!-- Parameterized pipes -->
+
+<!-- {{ DOB }}<br />
+short date is {{ DOB | date : "short" : "m/d/yy" }}
+<br />
+{{ Salary | currency : "USD" : true }}
+<h3>Upper Case {{ title | uppercase }}</h3>
+<br />
+<h3>Lower Case {{ title | lowercase }}</h3>
+<br />
+<h3>Title Case {{ title | titlecase }}</h3>
+<br />
+<h3>Slice Case {{ title | slice : 2 : 5 }}</h3>
+<br /> -->
+
+<!-- Custom pipes -->
+
+<!-- <div *ngFor="let item of NumberArray">
+  multiplication of {{ item.num1 }} and {{ item.num2 }} is
+  {{ item.num1 | multiplication : item.num2 }}
+</div> -->
+
+<!-- Routing  -->
+<!-- <app-student></app-student>
+<app-teacher></app-teacher> -->
+
+<h1 style="color: red">DisplayMsg = {{ DisplayMsg }}</h1>
+<a [routerLink]="['std']">Student Comp.</a><br /><br />
+<a [routerLink]="['tcr']">Teacher Comp.</a><br /><br />
+<!-- <button (click)="DynamicRouter('std')">Go to Pages</button> -->
+
+<section>
+  <div class="example-label">Raised</div>
+  <div class="example-button-row">
+    <button mat-raised-button (click)="DynamicRouter('std')">
+      Student Comp.
+    </button>
+  </div>
+</section>
+<router-outlet></router-outlet>

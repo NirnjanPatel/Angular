@@ -1,0 +1,12 @@
+<h2>ngIf directive</h2>
+<p>used to dynamically modify the DOM structure</p>
+
+<button type="button" (click)="onEditClick()">Make Editable!</button>
+<div *ngIf="canEdit; else noEdit">
+<p>You can Edit!!</p>
+</div>
+<ng-template #noEdit >
+    <p>You can't Edit!</p>
+</ng-template>
+
+<p [contentEditable]="canEdit">{{ message }}</p>

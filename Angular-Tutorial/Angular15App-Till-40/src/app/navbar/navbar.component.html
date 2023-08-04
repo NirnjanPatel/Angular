@@ -1,0 +1,47 @@
+<!-- <mat-toolbar color="primary">
+  <span>User Management</span>
+  <div class="spacer"></div>
+  <a mat-button>Home</a>
+  <a mat-button>About</a>
+  <a mat-button>Contact</a>
+</mat-toolbar> -->
+
+<mat-toolbar color="primary">
+  <span>User Management</span>
+  <div class="spacer"></div>
+  <ul>
+    <li
+      [routerLinkActive]="'active'"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <a mat-button routerLink="">Home</a>
+    </li>
+    <li [routerLinkActive]="'active'">
+      <a mat-button routerLink="std">Student</a>
+    </li>
+    <li [routerLinkActive]="'active'">
+      <a mat-button routerLink="tcr">Teacher</a>
+    </li>
+    <li [routerLinkActive]="'active'">
+      <a mat-button routerLink="contactus">Contact Us</a>
+    </li>
+  </ul>
+</mat-toolbar>
+
+<!-- <div class="topnav">
+  <ul>
+    <li
+      [routerLinkActive]="'active'"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <a [routerLink]="">Home</a>
+    </li>
+    <li [routerLinkActive]="'active'"><a [routerLink]="'std'">Student</a></li>
+    <li [routerLinkActive]="'active'"><a [routerLink]="'tcr'">Teacher</a></li>
+    <li [routerLinkActive]="'active'">
+      <a [routerLink]="'contactus'">Contact Us</a>
+    </li>
+  </ul>
+</div> -->
+
+<div class="container"><router-outlet></router-outlet></div>

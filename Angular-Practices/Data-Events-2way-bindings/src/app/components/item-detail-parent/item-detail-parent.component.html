@@ -1,0 +1,20 @@
+<h1 id="event-binding">Event Binding</h1>
+<div class="group">
+    <h3>Target event</h3>
+    <button type="button" (click)="onSave($event)">Save</button>
+
+    <button type="button" on-enter="onSave()">on-click save</button>
+
+    <h4>myClick is an event on the custom ClickDirective:</h4>
+
+    <button type="button" (myClick)="clickMessage=$event" clickable="click with myClick">{{clickMessage}} </button>
+</div>
+<div class="group">
+    <h3>$event and event handling statements</h3>
+    <h4>Result : {{currentItem.name}} </h4>
+
+    <input [value]="currentItem.name" (input)="currentItem.name = getValue($event)">
+    without ngModel
+</div>
+
+<app-item-detail></app-item-detail>

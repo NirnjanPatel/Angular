@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+header nav ul li {
+    list-style: none;
+    font-weight: 500;
+    font-size: large;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 20px;
+    z-index: 1;
+    right: 20px;
+
+}
+
+.right {
+    right: 190px;
+    position: absolute;
+}
+
+.heading {
+    font-size: x-large;
+    text-decoration-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+header nav ul li a {
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: right
+}
+
+nav ul {
+    display: flex;
+    align-items: self-start;
+    gap: 20px;
+    margin: 0%;
+
+}

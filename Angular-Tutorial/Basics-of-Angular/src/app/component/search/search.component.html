@@ -1,0 +1,24 @@
+<div class="row" [ngClass]="{ changeBackground: searchValue != '' }">
+  <div class="col-sm-4"></div>
+  <div class="col-sm-4 mt-5">
+    <div class="form-group">
+      <!-- <input type="text" class="form-control" placeholder="Search for products, brands and more"
+                (input)="onValueChange($event)"> -->
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Search for products, brands and more"
+        [(ngModel)]="searchValue"
+      />
+      <!-- <input type="text" class="form-control" placeholder="Search for products, brands and more" > -->
+      <span class="search-icon">
+        <i class="fa fa-search"></i>
+      </span>
+    </div>
+    <span *ngIf="searchValue != ''">You searched for : {{ searchValue }}</span>
+  </div>
+  <div class="col-sm-4"></div>
+</div>
+
+<app-products></app-products>
+<app-notification></app-notification>

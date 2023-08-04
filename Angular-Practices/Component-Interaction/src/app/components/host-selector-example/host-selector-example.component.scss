@@ -1,0 +1,16 @@
+:host {
+  font-style: italic;
+  color: rgb(0, 4, 244);
+}
+:host(.active) {
+  font-weight: bold;
+}
+:host ::ng-deep h3 {
+  font-style: italic;
+  color: rgb(244, 0, 0);
+}
+
+:host ::ng-deep h4 {
+  font-style: italic;
+  color: rgb(244, 0, 0);
+}

@@ -1,0 +1,48 @@
+<div class="row" [hidden]="display" >
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-10">
+        <header>
+            <div class="navbar navbar-dark bg-primary shadow-sm">
+                <div class="navbar-brand align-item-center d-flex">
+                    <a href="/">
+                        <img width="75"
+                            src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+                            alt="Flipkart" title="Flipkart" class="_2xm1JU">
+                    </a>
+                    <div class="form-group">
+                        <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)"
+                            placeholder="Search for products, brands and more">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+
+
+
+                </div>
+                <a class="Loginbtn" href="#" role="button">Login</a>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+
+                <button routerLink="cart" class="btn btn-primary">
+                    <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
+                    <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+                </button>
+            </div>
+        </header>
+    </div>
+    <div>
+    </div>
+
+    <div class="col-md-1">
+    </div>
+</div>

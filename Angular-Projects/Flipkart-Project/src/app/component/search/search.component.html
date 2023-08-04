@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4 mt-5">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search for products, brands and more"
+                (input)="onValueChange($event)">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+        <span>You searched for : {{searchValue}}</span>
+    </div>
+    <div class="col-sm-4"></div>
+
+</div>

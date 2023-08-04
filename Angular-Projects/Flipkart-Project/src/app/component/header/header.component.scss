@@ -1,0 +1,28 @@
+.form-control {
+    border-radius: 3px;
+    width: 600px;
+    margin-left: 20px;
+}
+
+.row{
+    background-color: #2874f0;
+}
+.search-icon {
+    position: absolute;
+    z-index: 10;
+    right: 46%;
+    top: 20px;
+        color: #2874f0;
+}
+.logo{
+    text-decoration: none;
+    color: white;
+}
+.Loginbtn{
+    background-color:#fff;
+    color: #2874f0;
+    padding: 3px 35px;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}

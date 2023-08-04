@@ -1,0 +1,93 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employee": [
+    {
+      "firstName": "Neer",
+      "lastName": "Neer",
+      "email": "Neer",
+      "dob": "2023-06-07T18:30:00.000Z",
+      "gender": "male",
+      "education": "Graduation",
+      "company": "Neer",
+      "experience": 1,
+      "package": 2,
+      "id": 2
+    },
+    {
+      "firstName": "a",
+      "lastName": "a",
+      "email": "a",
+      "dob": "2023-06-07T18:30:00.000Z",
+      "gender": "male",
+      "education": "Diploma",
+      "company": "11ee",
+      "experience": 1,
+      "package": 11,
+      "id": 3
+    },
+    {
+      "firstName": "dw",
+      "lastName": "ads",
+      "email": "ds",
+      "dob": "2023-06-08T18:30:00.000Z",
+      "gender": "male",
+      "education": "Intermidiate",
+      "company": "dsrf",
+      "experience": 2,
+      "package": 2,
+      "id": 4
+    },
+    {
+      "firstName": "_coreService",
+      "lastName": "_coreService",
+      "email": "_coreService",
+      "dob": "2023-06-07T18:30:00.000Z",
+      "gender": "male",
+      "education": "Diploma",
+      "company": "_coreService",
+      "experience": 1,
+      "package": 1,
+      "id": 5
+    },
+    {
+      "firstName": "_core",
+      "lastName": "_core",
+      "email": "_core",
+      "dob": "2023-06-07T18:30:00.000Z",
+      "gender": "female",
+      "education": "Graduation",
+      "company": "_core",
+      "experience": 2,
+      "package": 2,
+      "id": 6
+    },
+    {
+      "firstName": "_core_core",
+      "lastName": "_core_core",
+      "email": "_core_core",
+      "dob": "2023-06-09T18:30:00.000Z",
+      "gender": "others",
+      "education": "Post Grad.",
+      "company": "_core_core",
+      "experience": 12,
+      "package": 2,
+      "id": 7
+    }
+  ]
+}

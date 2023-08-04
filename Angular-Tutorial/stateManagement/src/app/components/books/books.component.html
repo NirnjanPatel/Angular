@@ -1,0 +1,37 @@
+<ng-container *ngFor="let course of courses">
+  <div class="course-container row">
+    <div class="col-md-3 course-card">
+      <div class="row-cols-1 row-cols-md-3 g-4">
+        <img
+          [src]="course.image"
+          [alt]="course.name"
+          style="width: 220px; height: 140px"
+        />
+      </div>
+      <div class="course-name">
+        <h4>{{ course.name | titlecase }}</h4>
+      </div>
+      <div class="course-description">
+        <p>{{ course.description.slice(0, 80) }}...</p>
+      </div>
+      <div class="details"></div>
+      <div
+        class="course-type"
+        [ngStyle]="{ color: course.type === 'Free' ? 'Green' : 'Red' }"
+      >
+        {{ course.type }}
+      </div>
+      <div class="course-price">
+        <b>Price:</b> ${{ course.price | currency : "INR" }}
+      </div>
+    </div>
+    <div class="course-buttons">
+      <button class="btn btn-buy" *ngIf="!isInCart" (click)="addtoCart()">
+        Add to Cart
+      </button>
+      <button class="btn btn-show" *ngIf="isInCart" (click)="remove()">
+        Remove Item
+      </button>
+    </div>
+  </div>
+</ng-container>

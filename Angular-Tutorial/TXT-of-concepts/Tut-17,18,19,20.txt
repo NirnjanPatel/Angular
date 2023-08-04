@@ -1,0 +1,9 @@
+1. Two way data binding means a combination of event binding and property binding 
+! we can use ngModel directive as an example of two way data binding
+
+2. Directive - instruction to the DOM
+! @Component - such as instruction to the DOM like what to add in the webpage (to add html and logic of our component to the webpage)
+
+3. We can use custom directives, we mostly use directives as an HTML attribute.
+
+4. ngFor directive - 

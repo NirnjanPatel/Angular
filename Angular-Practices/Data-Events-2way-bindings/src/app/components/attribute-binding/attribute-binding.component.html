@@ -1,0 +1,56 @@
+<h1>Attribute, class, and style bindings</h1>
+<h2>Attribute binding</h2>
+<table border=1>
+    <!--  expression calculates colspan=2 -->
+    <tr>
+        <td [attr.colspan]="1 + 1">One-Two</td>
+    </tr>
+
+    <!-- ERROR: There is no `colspan` property to set!
+    <tr><td colspan="{{1 + 1}}">Three-Four</td></tr>
+  -->
+    <!-- Notice the colSpan property is camel case -->
+    <tr>
+        <td [colSpan]="1 + 1">Three-Four</td>
+    </tr>
+
+    <tr>
+        <td>Five</td>
+        <td>Six</td>
+    </tr>
+</table>
+
+<!-- create and set an aria attribute for assistive technology -->
+<div>
+    <button type="button" [attr.aria-label]="actionName">{{actionName}} </button>
+</div>
+
+
+<hr />
+
+<h2>Styling precedence</h2>
+
+<h3>Basic specificity</h3>
+
+<!-- The `class.special` binding overrides any value for the `special` class in `classExpression`.  -->
+<div [class.special]="isSpecial" [class]="classExpression">Some text..</div>
+
+<!-- The `style.border` binding overrides any value for the `border` property in `styleExpression`.  -->
+<div [style.border]="border" [style]="styleExpression">Some Text..</div>
+
+<h3>Source specificity</h3>
+
+<comp-with-host-binding [class.special]="isSpecial" dirWithHostBinding></comp-with-host-binding>
+
+<h3>Dynamic vs static</h3>
+<!-- If `[class.special]` equals false, this value overrides the `class="special"` below -->
+<div class="special" [class.special]="false">Some Text..</div>
+
+<!-- If `styleExpression` has a value for the `border` property, this value overrides the `style="border: dotted darkblue 3px"` below -->
+<div style="border: dotted darkblue 2px;" [style]="styleExpression">Some Text..</div>
+
+<div class="readability">
+    <comp-with-host-binding dirWithHostBinding></comp-with-host-binding>
+</div>
+
+<app-my-input-with-attribute-decorator></app-my-input-with-attribute-decorator>

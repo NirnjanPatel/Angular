@@ -1,0 +1,42 @@
+.mat-toolbar {
+  background-color: #007bff;
+  color: white;
+}
+.mat-button {
+  color: white;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+a {
+  font-size: 18px;
+}
+
+.active {
+  /* background-color: rgb(0, 0, 0); */
+  color: #000000;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  height: 30px;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}

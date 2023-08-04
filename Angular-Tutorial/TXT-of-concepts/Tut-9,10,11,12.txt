@@ -1,0 +1,6 @@
+1. Template Property - We can use html directly or we can use TemplateURL instead.
+2. styleURL - instead of using styleURL, we can use CSS directly.
+3. Install Bootstrap - npm install --save  bootstrap @version - add this into angular.json in "styles" : object
+4. different selectors - we can use different selectors  - wrap the selectors with square brackets and add that into an div tag
+5. if we want this as css class then it can be added to the html tag as css class
+6. 

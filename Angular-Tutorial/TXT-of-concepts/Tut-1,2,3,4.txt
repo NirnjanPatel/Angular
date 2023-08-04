@@ -1,0 +1,14 @@
+------------- Angular Concepts to remember ------------
+
+1.HTML file is called - View template of a comp.
+2.src(source) - folder contains all our developmennt source code
+3.assets - store static assets ()images, icons, logo etc.
+4.environment - store environment (write environment related config - database cred or server IP address)
+5.main.ts - starting point of angular app - first file which will be executed (in this bootstraping main module to our project)
+6.polyfills - stores commands required to run angular app (fill the gap between angular and browser)
+7.test - used to set testing environment
+8.editorConfig - used to set team environment - evryone use different methods - this file is used to define code rules which will be followed by evryone.
+9.gitignore - stores files and folders which you dont want to upload to git
+10.angular.json - configurations realted to our project - we had angularcli.json before angular 6
+11.karma.config - test runner for js
+12.package.json - standarad configuration file for our project (dependency list)

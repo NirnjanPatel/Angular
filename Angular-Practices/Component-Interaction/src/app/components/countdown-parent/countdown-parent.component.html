@@ -1,0 +1,6 @@
+<!-- Parent interacts with child using local variable -->
+<h3>Countdown to Liftoff (via local variable)</h3>
+<button type="button" (click)="timer.start()">Start</button>
+<button type="button" (click)="timer.stop()">Stop</button>
+<h1 class="seconds">{{timer.seconds}}</h1>
+<app-countdown-timer #timer></app-countdown-timer>

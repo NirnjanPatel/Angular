@@ -1,0 +1,6 @@
+1. JS is dynamically typed but TS is stictly typed
+2. Angular Project execution - it loads index.html file first and rendered in browser but main.ts is the file which will be compiled at very beginning
+3. script files automatically added into index.html file by Angular CLI
+4. Ng serve command rebuilds (recompile) angular project and create js bundles and add them to index.html
+5. Component - App component is a root or main component
+6. 

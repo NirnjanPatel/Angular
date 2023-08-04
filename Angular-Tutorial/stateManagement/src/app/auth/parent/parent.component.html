@@ -1,0 +1,30 @@
+<h1>parent works!</h1>
+<br />
+<button
+  style="
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 6px;
+    background: #007bff;
+    color: #fff;
+  "
+  class=""
+  (click)="toggleChild()"
+>
+  Toggle child
+</button>
+<br />
+<br />
+<input
+  style="border: 1px solid black; border-radius: 5px"
+  type="text"
+  [(ngModel)]="channelName"
+/>
+
+<!-- <div class="my-5" >
+  <input
+    type="submit"
+    class="p-2 bg-purple-700 text-white rounded hover:bg-purple-900"
+  />
+</div> -->
+<app-child *ngIf="isChild" [channelName]="channelName"></app-child>

@@ -1,0 +1,5 @@
+<div class="container" style="width: 50%; text-align: center; margin-top: 20px;">
+    <button type="button" (click)="newMinor()">New minor version</button>
+    <button type="button" (click)="newMajor()">New major version</button>
+    <app-version-child [major]="major" [minor]="minor"></app-version-child>
+</div>

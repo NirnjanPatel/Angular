@@ -1,0 +1,17 @@
+<div class="container border p-5 mt-5">
+  <h1>binding works!</h1>
+  <button
+    [disabled]="canClick"
+    (click)="sayMessage()"
+    type="button"
+    class="btn btn-primary"
+  >
+    Trigger Message
+  </button>
+
+  <p [id]="sayHelloId" [style.color]="fontColor">
+    You can set my color in the component!
+  </p>
+
+  <p>My color is {{ fontColor }}</p>
+</div>

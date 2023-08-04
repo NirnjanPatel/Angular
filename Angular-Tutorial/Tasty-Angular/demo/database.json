@@ -1,0 +1,21 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "ptitle": "Balram-Properties",
+      "pprice": "100923",
+      "plocation": "Indore",
+      "pdetails": "2 rooms available"
+    }
+  ],
+
+  "signup": [
+    {
+      "id": 1,
+      "name": "Balram Kumar",
+      "email": "kbalramkumar@gmail.com",
+      "mobile": "6263274848",
+      "password": "balram@12345"
+    }
+  ]
+}

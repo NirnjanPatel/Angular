@@ -1,0 +1,8 @@
+<!-- <div class="alert alert-success" [hidden]="displayNotification"> -->
+<div class="alert alert-success" [ngClass]="{ fadeOut: displayNotification }">
+  This website uses cookies to ensure you get the best experience on our
+  website.
+  <div class="close">
+    <button class="btn" (click)="closeNotification()">X</button>
+  </div>
+</div>
